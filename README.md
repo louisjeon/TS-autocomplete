@@ -1,6 +1,6 @@
 # TS-autocomplete
 
-TS-autocomplete은 Pure Typescript, SCSS, Babel, Webpack 등을 이용해 구성한 Auto complete Search Bar 구현 프로젝트 입니다.
+TS-autocomplete은 Typescript, SCSS, Babel, Webpack 등을 이용해 구성한 Auto complete Search Bar 구현 프로젝트 입니다.
 
 사용법은 다음과 같습니다.
 
