@@ -6,6 +6,6 @@ TS-autocomplete은 Pure Typescript, SCSS, Babel, Webpack 등을 이용해 구성
 
 1. 현재 repository를 git clone 합니다.
 
-₩₩₩git clone https://github.com/louisjeon/TS-autocomplete.git₩₩₩
+```git clone https://github.com/louisjeon/TS-autocomplete.git```
 2. yarn 또는 npm i를 통해 관련 패키지들을 설치합니다.
 3. npm run dev 또는 yarn dev를 통해 로컬에서 프로젝트의 결과물을 확인할 수 있습니다.
