@@ -4,7 +4,7 @@ TS-autocomplete은 Typescript, SCSS, Babel, Webpack 등을 이용해 구현한 A
 
 사용법은 다음과 같습니다.
 
-1. 현재 repository를 git clone 합니다.
+1. 현재 repository를 clone 합니다.
 ```
 git clone https://github.com/louisjeon/TS-autocomplete.git
 ```
