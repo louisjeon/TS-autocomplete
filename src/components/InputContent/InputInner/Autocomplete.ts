@@ -1,6 +1,6 @@
 import "./Autocomplete.scss";
 
-const Autocomplete = document.createElement("div");
+const Autocomplete: HTMLDivElement = document.createElement("div");
 
 Autocomplete.classList.add("autocomplete");
 

@@ -1,6 +1,6 @@
 let timer: ReturnType<typeof setTimeout>;
 
-const debounce = (func: () => void, time: number) => {
+const debounce: Function = (func: () => void, time: number) => {
   if (timer) {
     clearTimeout(timer);
   }

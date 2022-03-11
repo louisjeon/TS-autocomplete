@@ -9,6 +9,7 @@ class Store {
     this.index = 0;
     this.updateView();
   }
+
   increment() {
     this.prevIndex = this.index;
     if (this.index + 1 < this.length) {
@@ -18,6 +19,7 @@ class Store {
     }
     this.updateView();
   }
+
   decrement() {
     this.prevIndex = this.index;
     if (this.index - 1 >= 0) {
@@ -27,6 +29,7 @@ class Store {
     }
     this.updateView();
   }
+
   updateView() {
     const prevTarget = document.getElementById(
       "movie-" + this.prevIndex.toString()
@@ -35,9 +38,11 @@ class Store {
       prevTarget.style.backgroundColor = "inherit";
     }
 
-    const target = document.getElementById("movie-" + this.index.toString());
-    if (target) {
-      target.style.backgroundColor = "wheat";
+    const currentTarget = document.getElementById(
+      "movie-" + this.index.toString()
+    );
+    if (currentTarget) {
+      currentTarget.style.backgroundColor = "wheat";
     }
   }
 }

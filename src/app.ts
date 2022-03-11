@@ -1,6 +1,6 @@
 import "./app.scss";
 import InputContainer from "./components/InputContainer";
 
-const app = document.querySelector(".app");
+const app: HTMLDivElement = document.querySelector(".app");
 
 app.appendChild(InputContainer);

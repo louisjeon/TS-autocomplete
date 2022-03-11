@@ -6,12 +6,17 @@ interface Movie {
   id: number;
 }
 
+let newCache: any;
+
+(async () => {
+  newCache = await caches.open("new-cache");
+})();
+
 const url =
   "https://5qfov74y3c.execute-api.ap-northeast-2.amazonaws.com/web-front/autocomplete?value=";
 
-const handleFetch = async (keyword: string) => {
+const handleFetch: Function = async (keyword: string) => {
   const res = await fetch(url + keyword).then((res) => res.json());
-
   Autocomplete.innerHTML = "";
 
   res.forEach((movie: Movie, index: number) => {

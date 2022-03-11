@@ -3,6 +3,6 @@
   flex-direction: column;
   border: 3px solid black;
   overflow: hidden;
-  margin: auto;
+  margin: calc(50vh - 25px) auto auto;
   box-sizing: content-box;
 }

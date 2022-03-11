@@ -2,7 +2,7 @@ import ClearBtn from "./InputInner/ClearBtn";
 import Input from "./InputInner/Input";
 import "./InputOutter.scss";
 
-const InputOutter = document.createElement("div");
+const InputOutter: HTMLDivElement = document.createElement("div");
 
 InputOutter.classList.add("input_outter");
 

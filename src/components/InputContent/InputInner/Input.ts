@@ -5,7 +5,7 @@ import InputContainer from "../../InputContainer";
 import Autocomplete from "./Autocomplete";
 import "./Input.scss";
 
-const Input = document.createElement("input");
+const Input: HTMLInputElement = document.createElement("input");
 
 Input.classList.add("input");
 
@@ -13,15 +13,15 @@ Input.addEventListener("focusin", () => {
   InputContainer.appendChild(Autocomplete);
 });
 
-Input.addEventListener("focusout", (e) => {
+Input.addEventListener("focusout", () => {
   InputContainer.removeChild(Autocomplete);
 });
 
-Input.addEventListener("input", (e) => {
+Input.addEventListener("input", () => {
   if (Input.value) {
     debounce(() => handleFetch(Input.value), 200);
   } else {
-    Input.innerText = "";
+    Autocomplete.innerHTML = "";
   }
 });
 
